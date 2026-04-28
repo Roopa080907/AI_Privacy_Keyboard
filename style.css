@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  width: 420px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  overflow: hidden;
+}
+
+.header {
+  background: #1e293b;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-box {
+  height: 300px;
+  padding: 10px;
+  background: #111827;
+  overflow-y: auto;
+}
+
+.msg {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.user {
+  background: #2563eb;
+  text-align: right;
+}
+
+.bot {
+  background: #374151;
+}
+
+.warning {
+  padding: 8px;
+  font-size: 13px;
+  color: #facc15;
+  min-height: 20px;
+}
+
+/* Risk meter */
+.meter-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.meter {
+  width: 100%;
+  height: 8px;
+  background: #374151;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#meterFill {
+  height: 100%;
+  width: 0%;
+  background: green;
+  transition: 0.3s;
+}
+
+/* Safe message */
+#safeMsg {
+  padding: 8px;
+  font-size: 13px;
+  color: #38bdf8;
+}
+
+/* Input */
+.input-area {
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  cursor: pointer;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #ef4444;
+  color: white;
+  border-radius: 5px;
+  animation: fade 2s ease;
+}
+
+@keyframes fade {
+  0% { opacity: 0; transform: translateY(-10px); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}

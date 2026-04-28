@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Privacy Keyboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="header">
+    🔐 AI Privacy Keyboard
+  </div>
+
+  <div class="chat-box" id="chatBox">
+    <div class="msg bot">Start typing your message 👇</div>
+  </div>
+
+  <div class="warning" id="warning"></div>
+
+  <!-- Risk Meter -->
+  <div class="meter-container">
+    <div id="meterLabel">Risk Level</div>
+    <div class="meter">
+      <div id="meterFill"></div>
+    </div>
+  </div>
+
+  <!-- Safe message -->
+  <div id="safeMsg"></div>
+
+  <div class="input-area">
+    <input type="text" id="inputBox" placeholder="Type a message..." oninput="analyzeMessage()">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
